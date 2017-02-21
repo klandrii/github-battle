@@ -12,6 +12,7 @@ module.exports = {
         path: __dirname + '/dist',
         filename: "index_bundle.js"
     },
+    devtool: '#eval-source-map',
     module: {
         loaders: [
             {test: /\.js$/, exclude: /node_modeules/, loaders: "babel-loader"}
