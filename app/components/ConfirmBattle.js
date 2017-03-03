@@ -22,13 +22,13 @@ function ConfirmBattle (props) {
                 <UserDetails info= {props.playersInfo[1]} />
             </UserDetailsWrapper>
         </div>
-        <div className='col-sm-8 col-sm-offset-2'>
-            <div className='col-sm-12' style={styles.space}>
-                <button type='button'className='btn btn-lg btn-success pull-left ' onClick={props.onInitiateBattle} >
+        <div className='btn group '>
+            <div className='col-sm-12' >
+                <button type='button'className='btn btn-lg btn-success  ' onClick={props.onInitiateBattle} >
                     Initiate Battle!
                 </button>
-                <Link to='/playerOne'>
-                    <button type='button'className='btn btn-lg btn-danger pull-right' onClick={props.onInitiateBattle} >
+                <Link to='/playerOne' style={styles.space}>
+                    <button type='button'className='btn btn-lg btn-danger  ' onClick={props.onInitiateBattle} >
                     Reselect Players
                     </button>
                 </Link>
