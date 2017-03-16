@@ -2,9 +2,11 @@ var styles = {
   transparentBg: {
     background: 'transparent'
   },
-space: {
-    marginLeft: '10px',
+spaces: {
+    marginTop: '25px',
   }
 }
+
+
 
 module.exports = styles;
