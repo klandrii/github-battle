@@ -6,6 +6,8 @@ var UserDetails = require('./UserDetails');
 var UserDetailsWrapper = require('./UserDetailsWrapper');
 var Link = require('react-router').Link;
 var MainContainer = require('../components/MainContainer');
+var Loader = require('semantic-ui-react').Loader;
+var Loading = require('../components/Loading');
 
 function StartOver (){
   return (
@@ -22,7 +24,10 @@ function StartOver (){
 function Results (props){
   if (props.isLoading === true){
     return (
-      <p> LOADINGU! </p>
+      <div>
+        <Loader active inline='centered'/>
+        <Loading text='And the winner is' speed={100} />
+      </div>
     )
   }
   if(props.scores[0] === props.scores[1]) {

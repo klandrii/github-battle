@@ -7,10 +7,14 @@ var UserDetailsWrapper = require('./UserDetailsWrapper');
 var UserDetails = require('./UserDetails');
 var Loader = require('semantic-ui-react').Loader;
 var MainContainer = require('../components/MainContainer');
+var Loading = require('../components/Loading');
 
 function ConfirmBattle(props) {
     return props.isLoading === true
-        ? <Loader active inline='centered' content='Loading'/>
+        ?<div>
+            <Loader active inline='centered'/>
+            <Loading speed={800} text='Just a sec'/> 
+        </div>
         : <MainContainer>
             <h1>Confirm Players</h1>
             <div className='col-sm-8 col-sm-offset-2'>
