@@ -9,7 +9,7 @@ var Warning = React.createClass({
     },
     getInitialState: function () {
         return {
-            text: 'Warning!'
+            text: 'Warning&&&&!'
         }
     },
     render: function () {
