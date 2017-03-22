@@ -23,7 +23,6 @@ function Prompt (props) {
               type="submit">
                 Continue
             </button>
-            <warning/>
           </div>
         </form>
       </div>
