@@ -1,6 +1,7 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 var transparentBg = require('../styles').transparentBg;
+var warning = require('./Warning');
 
 function Prompt (props) {
   return (
@@ -22,6 +23,7 @@ function Prompt (props) {
               type="submit">
                 Continue
             </button>
+            <warning/>
           </div>
         </form>
       </div>
