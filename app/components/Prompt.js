@@ -1,8 +1,10 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 var transparentBg = require('../styles').transparentBg;
+var Warning = require('../components/Warning')
 
 function Prompt (props) {
+  if (props.nameIsFalse) 
   return (
     <div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={transparentBg}>
       <h1>{props.header}</h1>
@@ -27,13 +29,17 @@ function Prompt (props) {
       </div>
     </div>
   )
+
+  return (
+    <Warning/>
+  )
 }
 
 Prompt.propTypes = {
   onSubmitUser: PropTypes.func.isRequired,
   onUpdateUser: PropTypes.func.isRequired,
   header: PropTypes.string.isRequired,
-  username: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired
 }
 
 module.exports = Prompt
