@@ -28,4 +28,4 @@ chrome-user-data
 *.sublime-workspace
 .idea
 *.iml
-.vscode
+.vscode/chrome/*
